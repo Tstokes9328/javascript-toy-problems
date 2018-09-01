@@ -1,5 +1,5 @@
 //Step 1: Clarify
-    //Create a function that returns an array consisting of the largest number from each provided sub-array.
+    //Create a function that accepts a 2d array of numbers and returns an array consisting of the largest number from each provided sub-array.
 
 //Step 2: Create sample data & solve without code
     //[[2,4,53,10], [23,32,9,87], [123,43,65,47]] ==> [53, 87, 123]
