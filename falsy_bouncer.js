@@ -32,7 +32,21 @@
                 truthyArray.push(array[i]);
             }
         }
-        console.log(truthyArray);
+        console.log(truthyArray); //Instead of returning
+    }
+
+    function falsyCheckerTwo(array){
+        let truthyArray = [];
+        array.forEach((element) => {
+            if(element){
+                truthyArray.push();
+            }
+        })
+        console.log(truthyArray); //Instead of returning
+    }
+
+    function falsyCheckerThree(array){
+        return array.filter(element => element);
     }
 
 //Step 6: Test
