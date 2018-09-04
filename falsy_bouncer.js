@@ -1,7 +1,7 @@
 //Step 1: Clarify
     //Create a function that takes in an array
     //Remove all falsy values from the array
-    //Falsy values in JavaScript are false, null, 0, "", undefined, and NaN
+    //Hint: Falsy values in JavaScript are false, null, 0, "", undefined, and NaN
 
 //Step 2: Create sample data and solve without code
     //[1, 0, false, 3, ''] ==> [1,3]
