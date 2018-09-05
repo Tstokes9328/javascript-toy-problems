@@ -24,37 +24,38 @@
 
 //Step 5: Solve with code
     //Option 1:
-    function checkStr(str, target){
-        if(str.substr(-target.length) === target){
-            return true;
-        }else {
-            return false;
-        }
-    }
+    // function checkStr(str, target){
+    //     if(str.substr(-target.length) === target){
+    //         return true;
+    //     }else {
+    //         return false;
+    //     }
+    // }
 
     //Option 2:
     function checkStrTwo(str, target){
-        if(str.endsWith(target)){
-            return true;
-        }else {
-            return false;
-        }
+        // if(str.endsWith(target)){
+        //     return true;
+        // }else {
+        //     return false;
+        // }
+        return str.endsWith(target);
     }
 
-    function checkStrThree(str, target){
-        return str.endsWith(target) ? true : false;
-    }
+    // function checkStrThree(str, target){
+    //     return str.endsWith(target) ? true : false;
+    // }
 
 //Step 6: Test
     //Option 1:
-    console.log('Test One:', checkStr('Tayte', 'e'));
-    console.log('Test Two:', checkStr('Apple iPhone', 'abc'));
-    console.log('Test Three:', checkStr('Video Games', 'ames'));
+    // console.log('Test One:', checkStr('Tayte', 'e'));
+    // console.log('Test Two:', checkStr('Apple iPhone', 'abc'));
+    // console.log('Test Three:', checkStr('Video Games', 'ames'));
     //Option 2:
     console.log('Test One:', checkStrTwo('Tayte', 'e'));
     console.log('Test Two:', checkStrTwo('Apple iPhone', 'abc'));
     console.log('Test Three:', checkStrTwo('Video Games', 'ames'));
     //Option 3:
-    console.log('Test One:', checkStrThree('Tayte', 'e'));
-    console.log('Test Two:', checkStrThree('Apple iPhone', 'abc'));
-    console.log('Test Three:', checkStrThree('Video Games', 'ames'));
+    // console.log('Test One:', checkStrThree('Tayte', 'e'));
+    // console.log('Test Two:', checkStrThree('Apple iPhone', 'abc'));
+    // console.log('Test Three:', checkStrThree('Video Games', 'ames'));
