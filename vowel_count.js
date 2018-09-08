@@ -26,6 +26,7 @@
     //Return the counter variable
 
 //Step 5: Solve with code
+    //Option 1:
     function vowelCount(str){
         let counter = 0;
         let lowerCaseString = str.toLowerCase();
@@ -33,6 +34,20 @@
         for(let i = 0; i < lowerCaseArray.length; i++){
             if(lowerCaseArray[i] == 'a' || lowerCaseArray[i] == 'e' || lowerCaseArray[i] == 'i' || lowerCaseArray[i] == 'o' || lowerCaseArray[i] == 'u'){
                 counter += 1;
+            }
+        }
+        console.log(counter);
+    }
+
+    //Option 2:
+    function vowelCounterTwo(str){
+        let counter = 0;
+        let vowels = ['a', 'e', 'i', 'o', 'u'];
+        for(let i = 0; i < str.length; i++){
+            for(let j = 0; j < vowels.length; j++){
+                if(str[i] == vowels[j]){
+                    counter += 1;
+                }
             }
         }
         console.log(counter);
