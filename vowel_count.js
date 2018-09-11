@@ -40,12 +40,13 @@
     }
 
     //Option 2:
-    function vowelCounterTwo(str){
+    function vowelCountTwo(str){
         let counter = 0;
+        let lowerCaseString = str.toLowerCase();
         let vowels = ['a', 'e', 'i', 'o', 'u'];
-        for(let i = 0; i < str.length; i++){
+        for(let i = 0; i < lowerCaseString.length; i++){
             for(let j = 0; j < vowels.length; j++){
-                if(str[i] == vowels[j]){
+                if(lowerCaseString[i] == vowels[j]){
                     counter += 1;
                 }
             }
@@ -53,6 +54,11 @@
         console.log(counter);
     }
 
+    //Option 3:
+    function vowelCountThree(str) {
+        console.log(str.match(/[aeiou]/ig, '').length);
+      }
+
 //Step 6: test
-let stringOne = 'Tayte Stokes';
+let stringOne = 'TAyte StokEs';
 vowelCount(stringOne);
