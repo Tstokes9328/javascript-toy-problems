@@ -31,7 +31,7 @@
     }
 
     function sortStringTwo(str){
-        return str.toLowerCase().split('').sort().join();
+        return str.toLowerCase().split('').sort().join('');
     }
 
 //Step 6: Tets
